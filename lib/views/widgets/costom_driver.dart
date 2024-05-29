@@ -14,6 +14,8 @@ class CustomDrawer extends StatelessWidget {
       children: [
         AppBar(
           title: const Text("MENU"),
+          automaticallyImplyLeading: false,
+          backgroundColor: Colors.blue,
         ),
         Padding(
           padding: const EdgeInsets.all(20),

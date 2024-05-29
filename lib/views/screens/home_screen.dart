@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         drawer: const CustomDrawer(),
         body: const Padding(
-          padding: EdgeInsets.all(40.0),
+          padding: EdgeInsets.all(10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 "Todo va Note yozmoqchi bolsangiz droverga oting",
                 style: TextStyle(
                     color: Colors.red,
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.bold),
               )
             ],

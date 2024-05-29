@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class TodoNoteItem extends StatefulWidget {
+class NoteItem extends StatefulWidget {
   final String title;
   final DateTime dateTime;
   final Function() onDelete;
   final Function() onEdit;
 
-  const TodoNoteItem({
+  const NoteItem({
     super.key,
     required this.title,
     required this.onDelete,
@@ -15,10 +15,10 @@ class TodoNoteItem extends StatefulWidget {
   });
 
   @override
-  State<TodoNoteItem> createState() => _TodoItemState();
+  State<NoteItem> createState() => _TodoItemState();
 }
 
-class _TodoItemState extends State<TodoNoteItem> {
+class _TodoItemState extends State<NoteItem> {
   bool isChecked = false;
 
   @override

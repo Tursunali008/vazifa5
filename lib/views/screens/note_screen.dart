@@ -3,7 +3,7 @@ import 'package:vazifa5/views/widgets/costom_driver.dart';
 import 'package:vazifa5/views/widgets/note_widgets/note_add.dart';
 import 'package:vazifa5/views/widgets/note_widgets/note_edit.dart';
 import 'package:flutter/material.dart';
-import 'package:vazifa5/views/widgets/todo_note_item.dart';
+import 'package:vazifa5/views/widgets/note_widgets/note_item_edit.dart';
 
 class NoteScreen extends StatefulWidget {
   const NoteScreen({super.key});
@@ -30,7 +30,7 @@ class _NoteScreenState extends State<NoteScreen> {
                   child: ListView.builder(
                     itemCount: noteController.list.length,
                     itemBuilder: (context, index) {
-                      return TodoNoteItem(
+                      return NoteItem(
                         title: noteController.list[index].title,
                         onDelete: () {
                           noteController.noteRemove(index);
